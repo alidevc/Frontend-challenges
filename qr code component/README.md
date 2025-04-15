@@ -34,6 +34,8 @@ Moving forward, I plan to continue understanding and getting a better grasp of f
 
 - [Resource 1](https://www.cssmatic.com/box-shadow) - This helped me for generate a box-shadow instead of having to edit and change it all the time.I really liked this website and will use it going forward.
 
+- [Resource 2](https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/) - This article helped me understand and guided me through what media queries are and how I can use/apply it. I'd recommend it to anyone still learning or struggling in this concept.
+
 ## Author
 
 - Website - [alidevc](https://www.github.com/alidevc)

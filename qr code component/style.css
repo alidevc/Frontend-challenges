@@ -1,9 +1,12 @@
 body{
-    height: 90vh;
+    height: 100vh;
     font-family: 'Outfit', sans-serif;
     background-color: hsl(212, 45%, 89%);
-    justify-self: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 h2{
@@ -22,10 +25,6 @@ p{
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: hsl(0, 0%, 100%);
     width: 260px;
@@ -42,9 +41,39 @@ p{
 .attribution{
     font-size: 11px;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 24px;
+}
+
+.attribution p{
+    font-size: 12px;
+    line-height: 8px;
 }
 
 .attribution a{
+    text-decoration: none;
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px){
+
+    .card{
+        width: 232px;
+    }
+
+    .text h2{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .text p{
+        font-size: 12px;
+    }
+
+    .attribution p{
+        font-size: 10px;
+    }
+
+    .text{
+        margin: 0 16px;
+    }
 }
