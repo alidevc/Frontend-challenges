@@ -1,0 +1,116 @@
+body{
+    font-family: 'Figtree', sans-serif;
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    justify-self: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+p{
+    font-size: 16px;
+}
+
+h2, .card-tag, .profile-name{
+    font-weight: 800;
+}
+
+h4, .card-publish-date{
+    font-weight: 500;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 7px 7px 0px 0px rgba(0,0,0,1);
+    padding: 20px;
+    width: 320px;    
+}
+
+.card-img{
+    border-radius: 12px;
+    width: 100%;
+}
+
+.card-tag{
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 4px;
+    width: 68px;
+    padding: 8px;
+    text-align: center;
+}
+
+.card-text{
+    color: hsl(0, 0%, 42%);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile-img{
+    height: 32px;
+    margin-right: 12px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 28px;
+    line-height: 12px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 480px){
+    .card{
+        width: 230px;
+        height: 348px;
+        padding: 15px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .card-tag{
+        padding: 6px 0;
+    }
+
+    .profile-img{
+        height: 24px;
+        margin-right: 8px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .card{
+        width: 240px;
+        height: 340px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    .card-tag{
+        padding: 6px 0;
+    }
+
+    .profile-img{
+        height: 28px;
+        margin-right: 10px;
+    }
+}
