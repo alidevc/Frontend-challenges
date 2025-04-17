@@ -17,7 +17,7 @@ body{
 
 p{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 a{
@@ -25,10 +25,14 @@ a{
 }
 
 .card-name{
-    font-size: 26px;
+    font-size: 22px;
 }
 
-.card-name, .card-location, .card-bio{
+.card-name, .card-location{
+    font-weight: 600;
+}
+
+.card-bio{
     font-weight: 400;
 }
 
@@ -41,24 +45,26 @@ a{
     margin-bottom: 4px;
 }
 
+.card-n-l{
+    margin: 12px 0;
+}
+
 .social-link a{
     color: #ffffff;
     width: 100%;
 }
 
 .card-profile-details{
-    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;   
 }
 
 .card{
     background-color: hsl(0, 0%, 12%);
-    width: 350px;
-    height: 480px;
-    padding: 24px 16px;
+    width: 310px;
+    height: 448px;
+    padding: 28px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,11 +72,17 @@ a{
     text-align: center;
 }
 
+.social-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .social-link{
     background-color: hsl(0, 0%, 20%);
-    width: 23vw;
+    width: 100%;
     margin-top: 15px;
-    padding: 12px 0;
+    padding: 12px 48px;
     cursor: pointer;
 }
 
@@ -104,4 +116,28 @@ a{
 .profile-img{
     border-radius: 50%;
     height: 80px;
+}
+
+@media screen and (max-width: 480px) {
+    .card{
+        width: 260px;
+        height: 420px;
+        padding: 24px 20px;
+    }
+
+    .social-link{
+        padding: 12px 42px;
+    }
+
+    .profile-img{
+        height: 64px;
+    }
+
+    .card-name{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 12px;
+    }
 }
