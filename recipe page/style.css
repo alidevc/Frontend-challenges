@@ -1,0 +1,77 @@
+:root{
+    --wrapper-bg: hsl(0, 0%, 100%);
+    --body-bg: hsl(30, 54%, 90%);
+    --container-bg: hsl(330, 100%, 98%);
+    --bold-color: hsl(24, 5%, 18%);
+    --main-heading-color: hsl(14, 45%, 36%);
+    --secondary-heading-color: hsl(332, 51%, 32%);
+    --main-text-color: hsl(30, 10%, 34%);
+    --line-color: hsl(30, 18%, 87%);
+} 
+
+.heading{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    color: var(--main-heading-color)
+}
+
+.heading:first-child{
+    color: black;
+}
+
+.prep-heading{
+    font-weight: 600;
+    color: var(--secondary-heading-color);
+}
+
+.bold{
+    color: var(--bold-color);
+}
+
+.text, td, .instr-li li, .prep-li li, .ing-li{
+    color: var(--main-text-color);
+}
+
+.text, li, td{
+    font-weight: 400;
+}
+
+li::marker{
+    color: var(--main-heading-color);
+}
+
+ol li::marker, .bold{
+    font-weight: 700;
+}
+
+ul li::marker{
+    font-weight: 400;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* web-layout/components/elements */
+
+body{
+    background-color: var(--body-bg);
+    font-family: 'Outfit', sans-serif;
+}
+
+.wrapper{
+    background-color: var(--wrapper-bg);
+}
+
+.container{
+    background-color: var(--container-bg);
+}
+
+td, .line{
+    border-bottom: 1px solid var(--line-color);
+}
