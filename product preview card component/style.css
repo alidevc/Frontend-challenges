@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* text styles */
+p{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+p, .btn{
+    font-family: 'Montserrat';
+}
+
+.heading{
+    line-height: 28px;
+    font-size: 28px;
+}
+
+.pricing{
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount{
+    font-size: 24px;
+    color: hsl(158, 36%, 37%);
+}
+
+.btn{
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.discount, .heading{
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+.attribution{
+    margin-top: 12px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(158, 36%, 37%);
+    text-decoration: none;
+}
+
+.product-details > p:first-child{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin: 12px 0;
+}
+
+.product-details > p:nth-of-type(2){
+    line-height: 20px;
+    margin: 12px 0;
+}
+
+.pricing p:nth-child(2){
+    text-decoration: line-through;
+}
+
+.attribution a:hover{
+    color: hsl(158, 42%, 18%);
+}
+
+/* web layout/components/design */
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 528px;
+    height: 380px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.product-details{
+    width: 50%;
+    height: auto;
+    padding: 12px 32px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.product-img{
+    background-image: url("images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+    width: 60%;
+    height: 100%;
+}
+
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: #fff;
+    height: 40px;
+    border-radius: 8px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    margin-right: 12px;
+    height: 14px;
+}
+
+.btn:hover{
+    background-color: hsl(158, 42%, 18%);
+}

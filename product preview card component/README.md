@@ -34,7 +34,7 @@ Moving forward, I plan on getting a better grasp of creating responsive websites
 
 - [Resource 1](https://developer.mozilla.org/en-US/docs/Web) - I used the MDN documentation to refresh my memory of how some elements were used and helped me understand some facts I didn't know before. 
 
-- [Resource 2](https://www.w3schools.com/css/) - I used the W3Schools website to understand how to style the table and bullet and some facts I didn't know before such as how to select the bullet of a list. 
+- [Resource 2](https://www.w3schools.com/css/) - I used the W3Schools website to refresh my memory and guided me on  how to style and select certain elements. 
 
 
 ## Author
