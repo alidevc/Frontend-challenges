@@ -1,4 +1,4 @@
-# Frontend Mentor - Recipe page solution
+# Frontend Mentor - Four card feature section
 
 ## Table of contents
 
@@ -22,6 +22,7 @@
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid layout
 - Mobile-first workflow
 
 ### Continued development
@@ -30,9 +31,9 @@ Moving forward, I plan on getting a better grasp of creating responsive websites
 
 ### Useful resources
 
-- [Resource 1](https://developer.mozilla.org/en-US/docs/Web) - I used the MDN documentation to refresh my memory of how some elements were used and helped me understand some facts I didn't know before. 
+- [Resource 1](https://developer.mozilla.org/en-US/docs/Web) - I used the MDN documentation to refresh my memory of how some elements were used, like the grid layout and helped me understand some facts I didn't know before. 
 
-- [Resource 2](https://www.w3schools.com/css/) - I used the W3Schools website to refresh my memory and guided me on  how to style and select certain elements. 
+- [Resource 2](https://www.w3schools.com/css/) - I used the W3Schools website to refresh my memory and guided me on  how to style and select certain elements.
 
 
 ## Author

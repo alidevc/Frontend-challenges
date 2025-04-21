@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* text styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-size: 15px;
+    color: hsl(212, 6%, 44%);
+}
+
+.hero-text{
+    text-align: center;
+    line-height: 44px;
+}
+
+.light{
+    font-weight: 200;
+    color: hsl(212, 6%, 44%);
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    margin-top: 16px;
+    line-height: 20px;
+}
+
+.card h2{
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 14px;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.bold, .card h2{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+/* web layout/components/elements design */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 24px;
+    margin: 20px 0;
+}
+
+.card{
+    width: 280px;
+    height: 180px;
+    padding: 24px 28px;
+    border-top: 4px solid;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.hero-text{
+    margin: 36px 0 20px 0;
+    width: 520px;
+}
+
+.icon{
+    float: right;
+    width: 52px;
+    margin: auto 0;
+    align-self: flex-end;
+}
+
+.team-builder{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    border-top-color: hsl(0, 78%, 62%);
+}
+
+.supervisor{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transform: translateY(150px);
+    border-top-color: hsl(180, 62%, 55%);
+}
+
+.calculator{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    transform: translateY(150px);
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+.karma{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border-top-color: hsl(34, 97%, 64%);
+}
