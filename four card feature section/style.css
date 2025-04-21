@@ -116,3 +116,29 @@ body{
     grid-row: 2 / 3;
     border-top-color: hsl(34, 97%, 64%);
 }
+
+@media screen and (max-width: 768px) {
+    /* text styles */
+    .heading{
+        font-size: 24px;
+    }
+
+    .hero-text{
+        width: 320px;
+        line-height: 32px;
+    }
+
+    /* web layout/components/elements design */
+    .features-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 260px;
+    }
+
+    .supervisor, .calculator{
+        transform: initial;
+    }
+}
