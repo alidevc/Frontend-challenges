@@ -1,0 +1,66 @@
+/* text style */
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.white{
+    color: hsl(217, 19%, 35%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* web layout/components/design */
+.grid-container{  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "purple purple grey white"
+      "small-w dark-grey dark-grey white";
+}
+
+
+.card .white{
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+.purple{
+    grid-area: purple;
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+.dark-grey{
+    grid-area: dark-grey;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+}
+
+.grey{
+    grid-area: grey;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(214, 17%, 92%);
+}
+
+.small-w { 
+    grid-area: small-w; 
+}
+
+
+
+
+
+.white:last-child{
+    grid-area: white;
+}
