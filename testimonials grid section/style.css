@@ -51,8 +51,9 @@ body{
     font-weight: 500;
 }
 
-.white .review-heading{ color: hsl(217, 19%, 35%); }
-.grey .review-heading{ color: hsl(0, 0%, 100%); }
+.white .review-heading, .white .profile-name{ color: hsl(217, 19%, 35%); }
+.grey .review-heading, .grey .profile-name{ color: hsl(0, 0%, 100%); }
+.grey .profile-status{ color: hsl(0, 0%, 81%); }
 .white{ color: hsl(224, 10%, 45%); }
 .purple{ color: hsl(260, 100%, 95%); }
 .grey{ color: hsl(214, 17%, 92%); }
@@ -144,4 +145,16 @@ body{
 
 .white:last-child{
     grid-area: white;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+    }
+
+    .quotation-icon{
+        display: none;
+    }
 }
