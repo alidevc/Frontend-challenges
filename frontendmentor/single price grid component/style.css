@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+/* text styles */
+body{
+    font-family: "Karla", sans-serif;
+}
+
+.price{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.opacity{
+    font-size: 16px;
+    margin-left: 12px;
+    font-weight: 200;
+    opacity: 0.7;
+}
+
+.text{
+    margin: 8px 0 28px;
+}
+
+.btn{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Karla";
+}
+
+.attribution{
+    font-size: 12px;
+    text-align: center;
+}
+
+.j-o-c h2{
+    color: hsl(179, 62%, 43%);
+}
+
+.j-o-c h3{
+    color: hsl(71, 73%, 54%);
+    margin: 24px 0 10px 0;
+}
+
+.j-o-c p{
+    line-height: 24px;
+    color: hsl(218, 22%, 67%);
+    margin-top: 0;
+}
+
+.why-us ul{
+    padding-left: 0px;
+}
+
+.why-us ul li{
+    list-style-type: none;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.attribution a{
+    color: hsl(179, 62%, 43%);
+    text-decoration: none;
+}
+
+.subscription, .price, .why-us h3{
+    color: #fff;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+/* web/component layout/style */
+body{
+    background-color: hsl(204, 43%, 93%);
+    justify-items: center;
+    align-content: center;
+    height: 90vh;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 220px 260px;
+    width: 640px;
+    box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.j-o-c{
+    grid-column: span 2;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 8px;
+}
+
+.why-us{
+    background-color:
+    rgba(74,190,189,255);
+    border-bottom-right-radius: 8px;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 0;
+}
+
+.btn{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.j-o-c, .why-us, .subscription{
+    padding: 20px 40px;
+}
+
+.btn:hover{
+    color: hsl(179, 62%, 43%);
+    background-color: #fff;
+}
