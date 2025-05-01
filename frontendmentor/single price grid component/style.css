@@ -135,3 +135,70 @@ body{
     color: hsl(179, 62%, 43%);
     background-color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    /* text styles */
+    ul{
+        margin-bottom: 0;
+    }
+
+    .price{
+        font-size: 32px;
+    }
+
+    .text{
+        margin-bottom: 32px;
+        font-weight: 300;
+    }
+
+    .j-o-c h2{
+        font-size: 22px;
+    }
+
+    .j-o-c h3{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .j-o-c p{
+        margin: 0 0 16px 0;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .subscription h3{
+        font-size: 18px;
+    }
+
+    .j-o-c h2, .subscription h3, .why-us h3{
+        margin-top: 8px;
+    }
+
+    /* web/component layout/style */
+    body{
+        height: initial;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+
+    }
+
+    .subscription{
+        border-radius: 0;
+    }
+
+    .why-us{
+        border-radius: 0 0 8px 8px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .j-o-c, .why-us, .subscription{
+        padding: 24px;
+    }
+}
