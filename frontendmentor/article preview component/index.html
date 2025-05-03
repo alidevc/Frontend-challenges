@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Article preview component</title>
 
@@ -11,27 +14,35 @@
 <body>
   <div class="card">
     <img src="./images/drawers.jpg" alt="drawers" class="article-prvw-img">
-    <div>
-      <h2 class="artcile-prvw-heading">Shift the overall look and feel by adding these wonderful 
-      touches to furniture in your home</h2>
-      <p class="article-prvw-text">Ever been in a room and felt like something was missing? Perhaps 
-      it felt slightly bare and uninviting. I've got some simple tips 
-      to help you make any room feel complete.</p>
-    </div>
-  
-    <div>
-      <img src="./images/avatar-michelle.jpg" alt="profile-avatar" class="profile-img">
-      <h3 class="profile-name">Michelle Appleton</h3>
-      <p class="date"></p>28 Jun 2020
-      <button class="btn"><img src="./images/icon-share.svg" alt="share icon"></button>
-    </div>
-    <div class="share-links hidden active">
-      <p>Share</p>
-      <a href="#" class="fb-btn socials-icon"><img src="./images/icon-facebook.svg" alt="facebook logo"></a>
-      <a href="#" class="pint-btn socials-icon"><img src="./images/icon-pinterest.svg" alt="pinterest logo"></a>
-      <a href="#" class="twt-btn socials-icon"><img src="./images/icon-twitter.svg" alt="twitter logo"></a>
-    </div>
+    <div class="wrapper">
+      <div class="article-prvw">
+        <h2 class="artcile-prvw-heading">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p class="article-prvw-text">
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I've got some simple tips 
+          to help you make any room feel complete.
+        </p>
+      </div>
 
+      <div class="share-link hidden">
+        <div class="share-links">
+          <p>Share</p>
+          <a href="#" class="socials-icon"><img src="./images/icon-facebook.svg" alt="facebook logo" class="fb-img"></a>
+          <a href="#" class="socials-icon"><img src="./images/icon-twitter.svg" alt="twitter logo" class="twt-img"></a>
+          <a href="#" class="socials-icon"><img src="./images/icon-pinterest.svg" alt="pinterest logo" class="pint-img"></a>
+        </div>
+        <div class="arrow-down"></div>
+      </div>
+      <div class="article-op">
+        <img src="./images/avatar-michelle.jpg" alt="profile-avatar" class="profile-img">
+        <div class="article-op-details">
+          <h3 class="profile-name">Michelle Appleton</h3>
+          <p class="date">28 Jun 2020</p>
+        </div>
+        <button class="share-btn share-btn-active"><img src="./images/icon-share.svg" alt="share icon"></button>
+      </div>
+      
+    </div>
   </div>
   
   <div class="attribution">

@@ -4,15 +4,164 @@
     box-sizing: border-box;
 }
 
+/* text styles */
+body{
+    font-family: "Manrope";
+}
+
+.artcile-prvw-heading{
+    font-size: 24px;
+}
+
+.article-prvw-text{
+    margin: 16px 0 20px;
+    font-size: 15px;
+    color: hsl(214, 17%, 51%);
+    font-weight: 500;
+}
+
+.profile-name{
+    font-size: 14px;
+}
+
+.date{
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(212, 23%, 69%);
+}
+
+.artcile-prvw-heading, .profile-name{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+} 
+
 .attribution { 
-    font-size: 11px; 
+    font-size: 12px; 
     text-align: center; 
+}
+
+.share-links p{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: hsl(212, 23%, 69%);
+}
+
+.share-links a{
+    margin-left: 15px;
+    font-size: 0;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+/* web/component layout/style */
+body{
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.card{
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    height: 300px;
+    width: 800px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 36px 40px 0;
+}
+
+.article-op{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.article-op-details{
+    margin-left: 16px;
+    line-height: 21px;
+}
+
+.article-prvw-img{
+    height: 100%;
+    width: 304px;
+    object-fit: cover;
+    object-position: left;
+    border: navajowhite;
+    border-radius: 10px 0 0 10px;
+}
+
+.profile-img{
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+.share-btn{
+    background-color:hsl(210, 46%, 95%);
+    border-radius: 50%;
+    border: none;
+    padding: 8px 10px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.fb-img{
+    margin-left: 4px;
 }
 
 .share-links{
     background-color: hsl(217, 19%, 35%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 230px;
+    height: 54px;
+    position: absolute;
+    bottom: 80px;
+    right: -56px;
+}
+
+.arrow-down{
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+    position: absolute;
+    bottom: 70px;
+    right: 48px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.active{
+    visibility: visible;
+}
+
+.share-btn-active{
+    background-color:hsl(214, 17%, 51%);
+}
+
+.share-btn-active img{
+    filter: brightness(0) invert(1);
 }
