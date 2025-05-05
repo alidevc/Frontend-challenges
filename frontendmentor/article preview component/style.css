@@ -151,7 +151,7 @@ body{
 }
 
 .hidden{
-    visibility: hidden;
+    display: none;
 }
 
 .active{
@@ -162,6 +162,93 @@ body{
     background-color:hsl(214, 17%, 51%);
 }
 
-.share-btn-active img{
+.share-img-active{
     filter: brightness(0) invert(1);
 }
+
+@media screen and (max-width: 768px) {
+    /* text styles */
+    .artcile-prvw-heading{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .article-prvw-text{
+        font-size: 14px;
+    }
+
+    .share-links p{
+        font-size: 13px;
+    }
+
+    .attribution{
+        margin-bottom: 12px;
+    }
+
+    .profile-name, .date{
+        font-size: 13px;
+    }
+    
+    /* web/component layout/style */
+    body{
+        height: initial;
+        width: 100vw;
+    }
+
+    .card{
+        flex-direction: column;
+        width: 340px;
+        height: 560px;
+        margin-top: 32px;
+    }
+
+    .wrapper{
+        margin: 0;
+        height: 100%;
+    }
+    
+    .article-prvw{
+        padding: 32px 32px 0;
+
+    }
+
+    .article-prvw-text{
+        margin-bottom: 0;
+    }
+
+    .article-op{
+        margin-top: 28px;
+        padding: 0 32px;
+
+    }
+
+    .share-links{
+        position: initial;
+        justify-content:initial ;
+        width: 100%;
+        height: 62px;
+        border-radius: 0 0 10px 10px;
+        margin-top: 30px;
+        padding: 0 36px;
+    }
+
+    .share-btn{
+        padding: 6px 8px;
+    }
+
+    .article-prvw-img{
+        width: 100%;
+        height: 220px;
+        object-position: center;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .share-links a{
+        margin-left: 16px;
+    }
+
+    
+}
+
+
+
