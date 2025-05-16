@@ -18,6 +18,10 @@
     color: var(--clr-secondary);
 }
 
+.card__title{
+    font-size: 40px;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -34,16 +38,17 @@
     line-height: 24px;
 }
 
-.card__lists li{
-    list-style-type: none;
-}
-
-.card__lists img{
+.card__list img{
     margin-right: 16px;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.card__form__content p{
+    font-size: 13px;
+    margin-bottom: 12px;
 }
 
 .bold, .btn{
@@ -66,8 +71,36 @@ body{
 }
 
 .card__form{
-    height: 60vh;
-    padding: 0 20px;
+    height: 96vh;
+    padding: 0 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__form__txtcontent{
+    height: 52vh;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__lists{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__list{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 16px;
+}
+
+.card__form__content{
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .success__card{
@@ -103,7 +136,19 @@ body{
     display: none;
 }
 
+.card__form input{
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid var(--clr-muted);
+    padding: 0 20px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
 .card__img-wrapper img, .card__form input, .btn{
     width: 100%;
+}
 
+.card__list:first-child{
+    margin-top: 0;
 }
