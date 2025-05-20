@@ -152,3 +152,28 @@ body{
 .card__list:first-child{
     margin-top: 0;
 }
+
+@media screen and (min-width: 768px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-up__card{
+        flex-direction: row;
+        border-radius: 8px;
+        width: 50%;
+        height: 480px;
+        padding-bottom: 0;
+    }
+
+    .card__img-wrapper{
+        order: 1;
+    }
+
+    .card__img-wrapper img{
+        height: 100%;
+    }
+}
