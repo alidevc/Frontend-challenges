@@ -154,6 +154,16 @@ body{
 }
 
 @media screen and (min-width: 768px){
+    /* text styles */
+    .card__title{
+       font-size: 48px;
+    }
+
+    .card__list p{
+        font-size: 0.93rem;
+    }
+
+    /* web/component layout/style */
     body{
         display: flex;
         flex-direction: column;
@@ -164,16 +174,36 @@ body{
     .sign-up__card{
         flex-direction: row;
         border-radius: 8px;
-        width: 50%;
+        width: 680px;
         height: 480px;
         padding-bottom: 0;
+        border-radius: 20px;
+    }
+
+    .card__form{
+        height: 100%;
+        padding: 20px 32px;
+    }
+
+    .card__form__txtcontent{
+        height: 36vh;
+    }
+
+    .card__form__content{
+        height: 24vh;
     }
 
     .card__img-wrapper{
         order: 1;
+        padding: 0 20px;
     }
 
     .card__img-wrapper img{
         height: 100%;
     }
+
+    .card__form__content .btn{
+        margin: auto;
+    }
+    
 }
