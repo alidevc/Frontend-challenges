@@ -2,6 +2,7 @@
     --clr-primary: hsl(234, 29%, 20%);
     --clr-secondary: hsl(235, 18%, 26%);
     --clr-muted: hsl(0, 0%,58%);
+    --clr-active: hsl(4, 100%, 67%);
     --font-main: "Roboto", sans-serif;
     --font-bold: 700;
 }
@@ -149,6 +150,16 @@ body{
     width: 100%;
 }
 
+.btn:hover{
+    background-color: var(--clr-active);
+}
+
+.card__form input:focus{
+    outline: none;
+    border: 1px solid;
+    opacity: 1.0;
+}
+
 .card__list:first-child{
     margin-top: 0;
 }
@@ -156,7 +167,7 @@ body{
 @media screen and (min-width: 768px){
     /* text styles */
     .card__title{
-       font-size: 48px;
+       font-size: 44px;
     }
 
     .card__list p{
@@ -174,7 +185,7 @@ body{
     .sign-up__card{
         flex-direction: row;
         border-radius: 8px;
-        width: 680px;
+        width: 720px;
         height: 480px;
         padding-bottom: 0;
         border-radius: 20px;
@@ -183,10 +194,11 @@ body{
     .card__form{
         height: 100%;
         padding: 20px 32px;
+        width: 50%;
     }
 
     .card__form__txtcontent{
-        height: 36vh;
+        height: 40vh;
     }
 
     .card__form__content{
@@ -195,11 +207,15 @@ body{
 
     .card__img-wrapper{
         order: 1;
-        padding: 0 20px;
+        padding: 16px;
+        width: 50%;
+        margin-left: auto;
     }
 
     .card__img-wrapper img{
         height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
     .card__form__content .btn{
